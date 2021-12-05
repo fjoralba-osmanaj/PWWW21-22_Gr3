@@ -53,4 +53,14 @@ form.example button {
  
   cursor: pointer;
 } 
+ .footer_text{
+    color: lightgray;
+}
+.footer_read {
+  text-align: right;
+}
+
+.footer_text p span{
+    float: right;
+} 
 }
