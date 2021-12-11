@@ -1,6 +1,6 @@
 body
 {
-  background-color: black;
+  background: linear-gradient(180deg, black 450px, rgb(27,27,27) 450px);
   counter-reset: section;
 }
 
@@ -25,10 +25,10 @@ div.titulli
 div.searchbar
 {
   box-sizing: content-box;
+}
 
-
- /*Style the search field*/ 
-form.example input[type=text] {
+/*Style the search field*/ 
+ form.example input[type=text] {
   padding: 0px;
   font-size: 0px;
   border: 0px solid black;
@@ -37,22 +37,22 @@ form.example input[type=text] {
   margin: auto;
   width: 150px;
   height: 20px;
-  background-color: darkred;
+  background-color: #C63154;
  }
- /* Style the submit button */
-form.example button {
-  float:right;
-  width: 4%;
-  padding: 5px;
-  background-color: black;
-  color: white;
-  font-size: 10px;
-    
-  border: 1px solid blue;
-  border-radius: 50px;
- 
-  cursor: pointer;
-} 
+  /*Style the submit button */
+  form.example button {
+    float:right;
+    width: 4%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+      
+    border: 1px solid #C63154;
+    border-radius: 90px;
+   
+    cursor: pointer;
+  }
  .footer_text{
     color: lightgray;
 }
@@ -63,4 +63,16 @@ form.example button {
 .footer_text p span{
     float: right;
 } 
+.mid{
+  border:1px solid rgb(67, 172, 40); height: 300px; width: 33%;
+  margin-top: 30px  ;
+  color:lightgray;
+  float:left;
+  
+}
+.mid_txt{
+  text-align: justify;
+  padding: 0px 10px;
+  padding-left: 0px;
+  color: rgb(124, 124, 124);
 }
