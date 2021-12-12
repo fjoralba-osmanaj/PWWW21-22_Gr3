@@ -29,7 +29,7 @@
 }
 /*-- search bar ^^^*/
  /*Style the search field*/ 
-/*
+
   form.example input[type=text] {
   padding: 0px;
   font-size: 0px;
@@ -40,9 +40,9 @@
   width: 150px;
   height: 20px;
   background-color: #C63154;
- }*/
+ }
  /* Style the submit button */
-/*
+
   form.example button {
   float:right;
   width: 4%;
@@ -56,7 +56,7 @@
  
   cursor: pointer;
 } 
-*/
+
 
 form.example button:hover {
   background-color: darkred;
@@ -123,6 +123,123 @@ form.example::after {
 
     
 </div>
+        <style>
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<body>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="e.jpg" style="width:960px; height: 380px">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="l.jpg" style="width:960px; height: 380px">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="aaa%20(4).jpg" style="width:960px; height: 380px">
+ 
+</div>
+    <div class="mySlides fade">
+
+  <img src="k.jpg" style="width:960px; height: 380px">
+ 
+</div>
+    <div class="mySlides fade">
+
+  <img src="f.jpg" style="width:960px; height: 380px">
+ 
+</div>
+    
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+    </script>
+        </body>
         <div style="border:1px solid pink; height: 250px; "></div>
 <div class="mid" > 
   <h2 class="midd">A Little About Us</h2> 
