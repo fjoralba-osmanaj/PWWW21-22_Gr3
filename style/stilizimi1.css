@@ -1,6 +1,6 @@
 body
 {
-  background: linear-gradient(180deg, black 450px, rgb(27,27,27) 450px);
+  background: linear-gradient(180deg, black 550px, rgb(27,27,27) 550px);
   counter-reset: section;
   padding: 0;
   margin: 0;
@@ -143,16 +143,30 @@ div.searchbar
 .footer_text p span{
     float: right;
 } 
+/* stilizimi i elementeve ne mes pas sllajdeve */
 .mid{
-  border:1px solid rgb(67, 172, 40); height: 300px; width: 33%;
+  border:1px solid rgb(67, 172, 40); ; width: 33%;
   margin-top: 30px  ;
   color:lightgray;
   float:left;
-  
+  box-sizing: border-box;
+  padding:10px ;
 }
+/* stilizimi i tekstit brenda elementit mid*/
 .mid_txt{
   text-align: justify;
   padding: 0px 10px;
   padding-left: 0px;
   color: rgb(124, 124, 124);
+  
 }
+/* stilizimi i linqeve qe paraqiten ne fund me ngjyre pink */
+.links1{
+  float: right;
+color: rgb(210,66,96); 
+text-decoration:none; 
+}
+.midd2{
+  margin: 20px;
+}
+
