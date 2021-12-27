@@ -1,172 +1,208 @@
-body
-{
-  background: linear-gradient(180deg, black 550px, rgb(27,27,27) 550px);
-  counter-reset: section;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Times New Roman", serif;
-  display: block;
+h3{
+    color:#FFF;
+    font-weight: normal;
+    margin-bottom: 2px;
 }
-* {
-  box-sizing: border-box;
+h4{
+    font-weight: normal;
+    font-size: 12px;
+    color:#FFF;
+    
+    
 }
-
-
-
-/*-- dukshmeria*/
-div.prapavija
-{   border-top: 10px solid #C63154;
-    opacity: 1.0;
-    background-repeat: repeat; 
-
+h5{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top:25px;
 }
-.title {
-  padding-top: 0.5em;
-  margin: 0;
-}
-div.title--text
-{
-   
-   
-
-  color: whitesmoke;
-  font-size: 16px;
-  font-weight:100;
-  line-height: 36px;
-  text-transform: uppercase;
-  padding-left: 1em;
-
+h6{
+    font-size: 14px;
+    font-weight:700;
+    margin-bottom: 5px;
     
 }
 
-.title--text::first-letter {
-  font-size: 46px;
-  line-height: 46px;
-}
-.title--text::fifth-letter {
-  font-size: 46px;
-  line-height: 46px;
-}
-div.header {
-  max-width: 98%;
-  background-color: #fff;
-  border-top: 5px solid #81b300;
-  position: relative;
-  margin: 0 auto;
-}
-
-.icons {
-  width: 250px;
-  height: 50px;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  right: 30px;
-}
-
-.icon {
-  width: 32px;
-  height: 32px;
-  background-color: #1f1f1f;
-  border-radius: 50%;
-}
-.icon--linkedin {
-  background-image: url("icons/icon_linkedin.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon--twitter {
-  background-image: url("icons/icon_twitter.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon--pinterest {
-  background-image: url("icons/icon_pinterest.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon--google-plus {
-  background-image: url("icons/icon_googleplus1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon--rss {
-  background-image: url("icons/icon_rss.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-div.searchbar
-{
-  box-sizing: content-box;
-}
-
-/*Style the search field*/ 
- form.example input[type=text] {
-  padding: 0px;
-  font-size: 0px;
-  border: 0px solid black;
-  border-radius: 10px;
-  float: right;
-  margin: auto;
-  width: 150px;
-  height: 20px;
-  background-color: #C63154;
- }
-  /*Style the submit button */
-  form.example button {
-    float:right;
-    width: 4%;
-    padding: 5px;
+/*pamja e headerit*/
+.header {
     background-color: black;
-    color: white;
-    font-size: 10px;
-      
-    border: 1px solid #C63154;
-    border-radius: 90px;
-   
-    cursor: pointer;
-  }
- .footer_text{
-    color: lightgray;
+    display: flex;
+    justify-content:space-between;
+    height: 140px;
+    padding: 0px 20px;
 }
-.footer_read {
-  text-align: right;
+h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+    float: inline-start;
+}
+h4{
+    font-size: 10px;
+    font-weight: 100;
+    color:rgb(66, 63, 63);
+    padding-top: 0% ;
+    margin-top: 0%;
+}
+body{
+    background-color: black;
+    border-top: 10px solid #b94058;
+    margin: auto;
+    width: 1000px;
+    cursor: context-menu;
+} 
+.style{
+
+margin-right: 10px;
+float: right;
+
 }
 
-.footer_text p span{
+.search .fa{
+    padding: 5px;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    border-radius: 100%;
     float: right;
+    margin-right: 10px;
+}
+
+
+
+/* pamja e naviagtion bar*/
+.topnav
+{
+ 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:20px;
+    height: 50px;
+    background-image: -webkit-linear-gradient(#504e4e,#111111);
 } 
+.topnav a:hover{
+    color: #b94058;
+}
+.topnav a{
+
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.topnav ul{
+float: left;
+padding-left: 20px;
+
+}
+.topnav ul li{
+    float: left;
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 2px solid whitesmoke;
+}
+#home{
+    border-left: none;
+}
+    /*Dropdown*/
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        border-bottom: 1px solid white;
+    }
+    nav ul li ul li {
+       padding: 15px ;
+       margin-left: -41px;
+       width: 43px;
+       background-color: #1b1b1b;
+       border-right: 1px solid rgb(117, 117, 106);;
+       
+    }
+    nav ul li:hover ul{
+        display: block;
+    }
+.slideshow-container{
+    height: 380px;
+    width: 960px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.next {
+position: absolute;
+cursor: pointer;
+color: #504e4e;
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+border-radius: 100%;
+border: 5px solid #504e4e;
+padding: 8px 16px;
+background-color: #111111;
+margin: 190px 30px;
+
+}
+.back{
+    position: absolute;
+    cursor: pointer;
+    color: #504e4e;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 100%;
+    border: 5px solid #504e4e;
+    padding: 8px 16px;
+    background-color: #111111;
+    margin: 190px 30px;
+
+}
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #504e4e;
+    border: 2px solid #504e4e;
+    display: inline-block;
+
+
+}
+
 /* stilizimi i elementeve ne mes pas sllajdeve */
 .mid{
-  border:1px solid rgb(67, 172, 40); ; width: 33%;
-  margin-top: 30px  ;
-  color:lightgray;
-  float:left;
-  box-sizing: border-box;
-  padding:10px ;
-}
+    border:1px solid rgb(67, 172, 40); ; width: 33%;
+    margin-top: 30px  ;
+    color:lightgray;
+    float:left;
+    box-sizing: border-box;
+    padding:10px ;
+  }
 /* stilizimi i tekstit brenda elementit mid*/
 .mid_txt{
-  text-align: justify;
-  padding: 0px 10px;
-  padding-left: 0px;
-  color: rgb(124, 124, 124);
-  
-}
-/* stilizimi i linqeve qe paraqiten ne fund me ngjyre pink */
-.links1{
-  float: right;
-color: rgb(210,66,96); 
-text-decoration:none; 
-}
-.midd2{
-  margin: 20px;
-}
+    text-align: justify;
+    padding: 0px 10px;
+    padding-left: 0px;
+    color: rgb(124, 124, 124);
+    
+  }
+  /* stilizimi i linqeve qe paraqiten ne fund me ngjyre pink */
+  .links1{
+    float: right;
+  color: rgb(210,66,96); 
+  text-decoration:none; 
+  }
+  .midd2{
+    margin: 20px;
+  }
+
+
 
