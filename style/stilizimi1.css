@@ -50,6 +50,34 @@ body{
     width: 1000px;
     cursor: context-menu;
 } 
+
+main{
+    background-color: #111111;
+    border-bottom: 4px solid #181717;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(24, 23, 23);
+    margin: 1em 0;
+    padding: 0;
+}
+#myLink {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #d24260;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
 .style{
 
 margin-right: 10px;
@@ -77,7 +105,7 @@ float: right;
 
 #search input {   
     width: 200px;
-    height: 25px;
+    height: 28px;
     background-color: #d24260;
     border-radius: 40px;
     float:right;
@@ -87,7 +115,7 @@ float: right;
 #search button {
     outline: none;
     position: absolute;
-    margin-left: 180px;
+    margin-left: 170px;
     margin-top: 3px;
     color:white;
     height: 23px;
@@ -206,12 +234,13 @@ margin: 190px 30px;
 
 /* stilizimi i elementeve ne mes pas sllajdeve */
 .mid{
-    border:1px solid rgb(67, 172, 40); ; width: 33%;
+    border:1px solid #202020; ; width: 33%; height: 520px;;
     margin-top: 30px  ;
-    color:lightgray;
+    color:#b94058;
     float:left;
     box-sizing: border-box;
     padding:10px ;
+    text-decoration: none;;
   }
 /* stilizimi i tekstit brenda elementit mid*/
 .mid_txt{
@@ -224,32 +253,33 @@ margin: 190px 30px;
   /* stilizimi i linqeve qe paraqiten ne fund me ngjyre pink */
   .links1{
     float: right;
-  color: rgb(210,66,96); 
+  color:#b94058; 
   text-decoration:none; 
   }
   .midd2{
-    margin: 20px;
+    margin-right:20px;
   }
 
   /* footer*/
    footer {
         background-color: #181717;
-        color: #999999;
+        color: rgb(124, 124, 124);
         border-top: 1px solid #202020;
         cursor:context-menu;
    }
+
 
    footer h5{
        color: #b94058;
    }
     
    .firstpart{
-       height: 240px;
-       padding-left: 20px;
-       padding-right: 20px;
-        display: block;
-        border-bottom: 1px solid #202020;
+       width: 300px;
+       float: left;
+       margin-left: 0px;
+       height: 200px;
    }
+
    footer ul li {
     border-bottom: 1px solid #202020;
     line-height: 14.4px;
@@ -261,4 +291,23 @@ footer ul {
     padding: 0;
 }
 
+.secondpart{
+    width: 290px;
+    margin-right: 20px;
+    float: left;
+    height: 200px;
 
+}
+.thirdpart{
+    width: 200px;
+    margin-right:20px;
+    float: left;
+    height: 200px;
+}
+#footer{
+    height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    border-bottom: 1px solid #202020;
+}
