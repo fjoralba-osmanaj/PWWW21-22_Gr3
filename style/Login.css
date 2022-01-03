@@ -1,5 +1,5 @@
  body {
-    background-color: white;
+    background-color: black;
     font-family: 'Times New Roman', Times, serif
 }
 
@@ -23,7 +23,7 @@
 
 .un {
 width: 76%;
-color: white;
+color: #333232;
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
