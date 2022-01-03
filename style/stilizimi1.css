@@ -37,14 +37,14 @@ h1{
     float: inline-start;
 }
 h4{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 100;
     color:rgb(66, 63, 63);
     padding-top: 0% ;
-    margin-top: 0%;
+    margin-top: -10px;
 }
 body{
-    background: linear-gradient(180deg, #080808 640px, #1b1b1b  640px);
+    background-color: black;
     border-top: 10px solid #b94058;
     margin: auto;
     width: 1000px;
@@ -85,19 +85,20 @@ float: right;
 
 }
 
-#socialMedia{
+.socialmedia{
     float: left;
     margin-right: 20px;
+    border-radius: 50%;
 }
-#socialMedia .fa {
+.socialmedia .fa {
     padding: 5px;
     font-size: 15px;
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     text-decoration: none;
     margin: 0px 2px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .fa:hover, body a:hover, #myBtn:hover {
     opacity: 0.7;
@@ -133,9 +134,10 @@ float: right;
  
     margin-left: 20px;
     margin-right: 20px;
-    margin-top:20px;
+    margin-bottom: 20px;
     height: 50px;
-    background-image: -webkit-linear-gradient(#504e4e,#111111);
+    background-image: -webkit-linear-gradient(#2b2929,#131212);
+    background-image:gradient(linear,left top, left bottom, from(#2b2b2b), to(#131212));
 } 
 .topnav a:hover{
     color: #b94058;
@@ -164,7 +166,9 @@ padding-left: 20px;
 }
 #home{
     border-left: none;
+ 
 }
+
     /*Dropdown*/
     nav ul li ul {
         display: none;
@@ -193,7 +197,7 @@ padding-left: 20px;
 }
 
 .next {
-position: absolute;
+position: relative;
 cursor: pointer;
 color: #504e4e;
 font-size: 20px;
@@ -205,9 +209,10 @@ padding: 8px 16px;
 background-color: #111111;
 margin: 190px 30px;
 
+
 }
 .back{
-    position: absolute;
+    position: relative;
     cursor: pointer;
     color: #504e4e;
     font-size: 20px;
@@ -218,9 +223,12 @@ margin: 190px 30px;
     padding: 8px 16px;
     background-color: #111111;
     margin: 190px 30px;
+    margin-left: 880px;
+  
 
 }
 .dot{
+    position: relative;
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -228,16 +236,18 @@ margin: 190px 30px;
     background-color: #504e4e;
     border: 2px solid #504e4e;
     display: inline-block;
+    margin-bottom: 100px;
 
 
 }
 
 .mid{
+    border: 1px solid #202020;
      width: 33%; height: 520px;;
     margin-top: 30px  ;
     color:#fafafa;
     float:left;
-    
+    box-sizing: border-box;
     padding:10px ;
     text-decoration: none;;
   }
@@ -260,6 +270,7 @@ margin: 190px 30px;
 
       padding: 20px;
       min-width: 290px;
+      margin-right: 20px;
    
   }
    /*zhvendosja e fotove ne pjesen e mesit 2_2*/
@@ -312,7 +323,7 @@ margin: 190px 30px;
    }
     
    .firstpart{
-       width: 300px;
+       width: 250px;
        float: left;
        margin-left: 0px;
        height: 200px;
@@ -330,17 +341,19 @@ footer ul {
 }
 
 .secondpart{
-    width: 290px;
-    margin-right: 20px;
+    width: 250px;
+    margin-right: 10px;
     float: left;
     height: 200px;
 
 }
 .thirdpart{
-    width: 200px;
-    margin-right:20px;
+    width: 180px;
+    margin-right:0px;
     float: left;
     height: 200px;
+    margin-left: 0px;
+
 }
 #footer{
     height: 240px;
@@ -348,4 +361,33 @@ footer ul {
     padding-right: 20px;
     display: block;
     border-bottom: 1px solid #202020;
+}
+
+footer ul li a , #mail:hover{
+     color:#999999;
+    text-decoration:none;
+}
+footer ul li a:hover, #mail:hover {
+    color:#b94058;
+}
+.button {
+    background-color: #2c2c2c;
+    border: none;
+    color: #b94058;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 8px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+.input {
+    width: 100%;
+    background-color: #2c2c2c;
+    color: #858585;
+    padding: 6px 10px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
 }
