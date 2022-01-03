@@ -44,7 +44,7 @@ h4{
     margin-top: 0%;
 }
 body{
-    background-color: linear-gradient(180deg, #080808 640px, #1b1b1b  640px);
+    background: linear-gradient(180deg, #080808 640px, #1b1b1b  640px);
     border-top: 10px solid #b94058;
     margin: auto;
     width: 1000px;
