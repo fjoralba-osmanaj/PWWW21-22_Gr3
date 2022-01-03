@@ -247,7 +247,7 @@ function showSlides() {
                         <p>Contact us by:
                             <br><abbr title="Telephone" style="text-decoration: none;">Tel</abbr>: +111 1111111
                             <br> Fax: +111 1111111
-                            <br><a id="mail" href="mailto:darkdelight@hotmail.com">Email:darkdelight@hotmail.com</a>
+                            <br><a id="mail" href="mailto:darkdelight@hotmail.com" style="color: rgb(124, 124, 124); text-decoration: none">Email:darkdelight@hotmail.com</a>
                         </p>
                         
                     </div>
@@ -255,19 +255,46 @@ function showSlides() {
                     <div class="secondpart">
                         <h5>QUICK LINKS</h5>
                         <ul>
-                            <li><a href="DarkDelight.html">Home Page</a></li>
-                            <li><a href="#">Our order online link</a></li>
-                            <li><a href="#">Buy a cake</a></li>
-                            <li><a href="#">Buy a cupcake</a></li>
+                            <li><a href="DarkDelight.html"style="color: rgb(124, 124, 124); text-decoration: none">Home Page</a></li>
+                            <li><a href="#"style="color: rgb(124, 124, 124); text-decoration: none">Our order online link</a></li>
+                            <li><a href="#"style="color: rgb(124, 124, 124); text-decoration: none">Buy a cake</a></li>
+                            <li><a href="#"style="color: rgb(124, 124, 124); text-decoration: none">Buy a cupcake</a></li>
                         </ul>
                     </div>
                     <div class="secondpart">
                         <h5>FROM THE BLOG </h5>
                         <p><b>Chocolate Peanut Butter Cheesecake.</b><br/>
-                            <small> Posted by <i> Dafin&#235;</i></small>
+                            <small> Posted by <i> Dafin&#235;</i><br>Chocolate-peanut butter lovers, this cheesecake is for you.</small>
                         </p>
 
                     </div>
+                
+                    <div class="thirdpart">
+                        <h5>GRAB OUR NEWSPAPER</h5>
+                        <form id="form1" name="form1" action="#" method="POST" onsubmit="return checkif()">
+                    <input type="text" class="input" name="emri" placeholder="Name" required/>
+                    <input type="email" class="input" name="emaili" placeholder="Email" required/>
+                    <input type="submit" class="button" value="SUBMIT" style="cursor: pointer;">
+                </form>
+                <script>
+                    function checkif() {
+                        var emri = document.forms["form1"]["emri"].value;
+                        var patt = /\s/g; //global search
+                        var mesazhi;
+                        try {
+                            if (!patt.test(emri.trim() + "")) throw "Please enter your full name";
+                            else if (emri == "") throw "Please enter your name";
+                            else if (emri < 4) throw "Please enter your full name";
+
+                        }
+                        catch (err) {
+                            window.alert(err);
+                            return false;
+                        }
+                    }
+                </script>
+                
+                </div>
             </div>
             
        </footer>  
