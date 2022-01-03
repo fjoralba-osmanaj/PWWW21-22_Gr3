@@ -156,6 +156,18 @@
 </div>
 
 <script>
+     var t = new Date().getHours();
+if (t < 10 && t>6) {
+    
+    document.body.style.background="linear-gradient(180deg, #e41616 640px, #1b1b1b  640px) ";
+} else if (t < 20 && t>10) {
+  
+    document.body.style.background="linear-gradient(180deg, #080808 640px, #1b1b1b  640px)";
+} else {
+  
+    document.body.style.background="linear-gradient(180deg, #ababab 640px, #1b1b1b  640px)";
+}
+    
 var slideIndex = 0;
 showSlides();
 
