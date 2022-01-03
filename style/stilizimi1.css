@@ -126,7 +126,13 @@ float: right;
     cursor: pointer;
     border-radius: 100%;
 }
-
+.copyright h6{
+    color: #2b2929;
+    font-size: 12px;
+    border-top: 1px solid #181717;
+    margin-top: 20px;
+    
+}
 
 /* pamja e naviagtion bar*/
 .topnav
