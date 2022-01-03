@@ -1,10 +1,10 @@
  body {
-    background-color: black;
+    background-color: white;
     font-family: 'Times New Roman', Times, serif
 }
 
 .main {
-    background-color: rgb(3, 3, 3);
+    background-color: papayawhip;
     width: 400px;
     height: 400px;
     margin: 7em auto;
@@ -23,11 +23,11 @@
 
 .un {
 width: 76%;
-color: #333232;
+color: white;
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
-background: #b91b3a;
+background: white;
 padding: 10px 20px;
 border: none;
 border-radius: 20px;
@@ -57,7 +57,7 @@ border: none;
 border-radius: 20px;
 outline: none;
 box-sizing: border-box;
-border: 2px solid rgba(0, 0, 0, 0.02);
+border: 2px solid rgba(241, 13, 13, 0.336);
 margin-bottom: 50px;
 margin-left: 46px;
 text-align: center;
