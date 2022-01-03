@@ -44,7 +44,7 @@ h4{
     margin-top: 0%;
 }
 body{
-    background-color: black;
+    background-color: linear-gradient(180deg, #080808 640px, #1b1b1b  640px);
     border-top: 10px solid #b94058;
     margin: auto;
     width: 1000px;
@@ -232,13 +232,12 @@ margin: 190px 30px;
 
 }
 
-/* stilizimi i elementeve ne mes pas sllajdeve */
 .mid{
-    border:1px solid #202020; ; width: 33%; height: 520px;;
+     width: 33%; height: 520px;;
     margin-top: 30px  ;
-    color:#b94058;
+    color:#fafafa;
     float:left;
-    box-sizing: border-box;
+    
     padding:10px ;
     text-decoration: none;;
   }
@@ -256,9 +255,48 @@ margin: 190px 30px;
   color:#b94058; 
   text-decoration:none; 
   }
+   /*stili i titujve sektorin e mesit 2*/
   .midd2{
-    margin-right:20px;
+
+      padding: 20px;
+      min-width: 290px;
+   
   }
+   /*zhvendosja e fotove ne pjesen e mesit 2_2*/
+  .img_2{
+      margin-right: 10px;
+
+
+  }
+  /*stili i titujve sektorin e mesit*/
+  .mid_2{
+      color: rgb(124, 124, 124); ;
+      font-weight:bold;
+      font-size: 16px;
+      margin-bottom: 6px;
+
+
+  }
+   /*stili elementeve div ne mesin horizontalisht te dyte*/
+  .midd3{
+      width: 25%;
+      height: 229px;
+      float: left;
+
+
+  }
+   /*stili i fotove te sektorit te 2*/
+  .midd3_3{
+      margin-left: 10px;
+      margin-top: 30px;
+  }
+   /*stili i tekstit ne sketorin 2*/
+  .midd3_text
+  {
+      padding-left: 10px;
+      margin-top: 8px;
+  }
+
 
   /* footer*/
    footer {
