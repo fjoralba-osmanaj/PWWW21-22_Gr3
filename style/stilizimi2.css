@@ -1,0 +1,144 @@
+.MainDiv{
+display: block;
+ height: 160px;
+  padding: 20px;
+  position: relative;
+   background-color: #181717;"
+}
+.l{
+    text-decoration: none;
+}
+.hrs{
+
+    background-color: rgb(40, 40, 40);
+    height: 2px;
+     margin: 0; 
+     margin-top: 10px;
+}
+.s1{
+    
+    width: 150px;
+    margin: 5px,2px;
+}
+#Div4{
+resize: vertical;
+  overflow: auto;
+}
+#t1{ outline-offset: 0px;
+    outline: 5px dashed #d24260;
+    background-color: aquamarine;
+    transform: translate(50px,10px);
+}
+#t2{outline-offset: 0px;
+    outline: 5px dashed #d24260;
+    background-color: rgb(196, 21, 187);
+    transform: rotate(20deg);
+}
+#t3{outline-offset: 0px;
+    outline: 5px dashed #d24260;
+     margin-left: 20px;
+    background-color: rgb(218, 135, 40);
+    transform: scale(1.2,1.6);
+                    
+}
+#t4{ outline-offset: 0px;
+    outline: 5px dashed #d24260;
+    margin-left: 20px;
+    background-color: rgb(8, 245, 28);
+    transform: skewX(20deg);
+}
+#t5{outline-offset: 0px;
+    outline: 5px dashed #d24260;
+    background-color: rgb(245, 229, 8);
+    transform: rotateX(150deg);
+}
+#t6{outline-offset: 0px;
+    outline: 5px dashed #d24260;
+    background-color: rgb(8, 32, 245);
+    transform: rotateY(150deg);
+}
+.divv{
+    height: 140px;
+    width: 49%;
+    display: inline-block;
+    margin: 0%;
+}
+#po{
+fill: rgb(245, 98, 0);  ;stroke:rgb(245, 98, 0);stroke-width:5;fill-rule:evenodd;
+transform: scale(0.4,0.4) translate(0px,0px);
+padding-left: 0;
+animation-name: example;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+@keyframes example {
+    from {padding-left: 0px;
+        transform: scale(0.4,0.4) translate(0px,0px);
+        fill: yellow; 
+        left: 0px;}
+    to {padding-left: 50px;
+        fill: rgb(245, 98, 0); 
+        left: 150px;
+        transform: scale(0.8,0.8) translate(50px,0px);}
+  }
+
+
+
+
+
+
+#rec{
+    transform: scale(0.5,0.5) rotate(20deg) translate(20px,20px) skewX(0deg);
+    fill:#b94058;
+    stroke:#807c7c;
+    stroke-width:5;
+    opacity:0.5;
+    animation-name: example1;
+animation-iteration-count: infinite;
+animation-duration: 6s;
+animation-direction: alternate;
+
+
+
+
+
+}
+@keyframes example1 {
+    from {transform: scale(0.5,0.5) rotate(20deg) translate(20px,20px)skewX(0deg); opacity: 0.5;}
+    to { transform: scale(0.5,0.5) rotate(20deg) translate(100px,20px)skewX(20deg); opacity: 1;}
+  }
+
+  #pp1{
+      transform: translate(10px,-40px);
+    transition: background-color 2s, height 1s, transform 5s;
+  }
+#pp1:hover
+{background-color: violet;
+    transform:translate(0px,-100px) rotateX(50deg) rotateY(60deg); ;
+    height: 200;
+}
+
+
+#Div1{
+    
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px dashed #d24260;
+    column-fill: auto;
+    
+}
+#hh{
+    column-span: all;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
+}
+.grid-item{
+    padding: 10px;
+    
+
+}
