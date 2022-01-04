@@ -225,7 +225,7 @@
         <button id="btn1">shfaq linkun e fotos</button>
         <button id="btn2">vendos vleren e re ne paragraf</button>
         <button id="btn3">vendos vleren origjinale</button>
-        <button id="btn4">shto * ne fillim</button>
+        <button id="btn4" onclick="clickCounter()">shto * ne fillim</button>
         
     </div>
     <div style="display: inline-block; width: 100px; float: right; position: absolute; top: 10px;right:200px;">
@@ -234,6 +234,7 @@
         <button id="btn6">Largon pjesen e theksuar</button>
         
     </div>
+           <div id="result" class="mid_txt"style="display: inline-block; width: 300px; float: right; position: absolute; top: 10px;right:500px;"></div>
     <hr class="hrs">
     </div>
     <div id="Div4" class="MainDiv grid-container" style="height: 250px; ">
@@ -309,6 +310,22 @@
       <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"style="border-style:dashed" >
 </div>
     </div>
+        <script>
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+              sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+              sessionStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button shto * ne fillim " + sessionStorage.clickcount + " time(s) in this session.";
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+        }
+
+                
+        </script>
 
 
 
