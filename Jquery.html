@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" manifest="demo.appcache">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkDelight</title>
+    <link rel="stylesheet" href="style/stilizimi1.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/stilizimi2.css">
+        <script  src="jquery-3.6.0.js"></script>
+        <script>
+           $(document).ready(function(){
+            $("#p1").mouseenter(function(){/*funksion qe aktivizohet me klikim*/
+                $("#p2").fadeIn(1500);
+                $("#p2").fadeOut(2000,function(){        /* implementimi callback*/
+                   $("#p3").fadeIn(1500);
+                          });
+                          
+                
+                   
+                          });
+                          $("#p1").mouseleave(function(){
+                            $("#p3").fadeOut(1500);
+                          });
+                
+            
+             
+            $("#Cake1").hover(function(){/*funksion qe aktivizohet me kalim mbi foto*/
+                
+                $("#Cake2").slideToggle(2000);
+            },
+            function(){
+                $("#Cake2").slideToggle(2000);
+            }); 
+            $("#Cake2").hover(function(){/*animacio qe aktivizohet me kalim mbi foto*/
+                
+                $("#p1").animate({
+                     left: '-=50px',
+                     opacity: '0.5',
+                     height: '+=50px',
+                     background:'navy',
+                     fontSize:'+=2px'
+                      
+                  });
+            },
+            function(){
+                $("#p1").animate({
+                     left: '+=50px',
+                     opacity: '1',
+                     height: '-=50px',
+                     fontSize:'-=2px',
+                     borderColo:'navy'
+                      
+                  });
+            }); 
+            
+            
+
+
+
+
+             $("#p1").dblclick(function(){
+                if ( $("#Cake2").css('display') == 'none' || $("#Cake2").css("visibility") == "hidden")
+                 {
+                 $("#Cake1").hide();
+                   
+                   $("#Cake2").show();
+                 }
+                 else{
+                    $("#Cake2").hide();
+                   
+                   $("#Cake1").show();
+                 }
+
+                 
+                  });
+                  /* metodat get set remove*/
+
+                  $("#btn1").click(function(){
+                    alert("Text: " + $("#pic1").text()+$("#pic1").attr("href"));
+                        });
+                        $("#btn2").click(function(){
+                            $("#p4").html("<mark><b>Delicious</b></mark>");
+                        });
+                        $("#btn3").click(function(){
+                            $("#p4").html(" <mark>Chocolate</mark> cake");
+                        });  
+                        $("#btn5").click(function(){
+                            $("#p4").append("*");
+                        }); 
+                        $("#btn4").click(function(){
+                            $("#p4").prepend("*");
+                        }); 
+                        $("#btn6").click(function(){
+                            $("#m1").empty("*");
+                        }); 
+                        
+                        
+
+
+
+
+                   });
+                   /*mundesojne drag and drop te imazhit*/
+                   function allowDrop(ev) {
+                    ev.preventDefault();
+                      }
+
+                    function drag(ev) {
+                      ev.dataTransfer.setData("text", ev.target.id);
+                       }
+
+                       function drop(ev) {
+                       ev.preventDefault();
+                       var data = ev.dataTransfer.getData("text");
+                      ev.target.appendChild(document.getElementById(data));
+                    }
+                   
+
+
+                   
+                 
+           
+           
+        </script>
+
+
+        
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logoja">
+                <h1>DARKDELIGHT</h1>
+                <h4>Every flavor has a story.</h4>
+            </div>
+
+            <div style="margin-top: auto; 
+                        margin-bottom: auto;">
+                <div id="socialmedia">
+                    <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"
+                        style="background: #18739e; color: white;"></a>
+                    <a href="https://twitter.com/"  class="fa fa-twitter "target="_blank"
+                        style="background: #4398da; color: white;"></a>
+                    <a href="https://www.pinterest.com/" class="fa fa-pinterest" target="_blank"
+                        style="background: #bb181e; color: white;"></a>
+                    <a href="http://plus.google.com/" class="fa fa-google-plus" target="_blank"
+                        style="background: #434647; color: white;"></a>
+                    <a href="https://rss.com/" class="fa fa-rss" target="_blank"
+                        style="background: #d8681e; color: white;"></a>
+                </div>
+
+                <div style="float: right;">
+                    <form id="search" action="#" method="GET">
+                    <input type="text" placeholder="" name="search">
+                    <button type="submit"><i class="fa fa-search"
+                        style="width: 3px; margin-right: 8px;"></i></button>
+                </form>
+                </div>
+                
+        </div>
+     </div>
+        
+            <div class="topnav">
+                <nav>
+                    <ul>
+                        <li id="home" style="border: none; padding-left: 0 ;"><a href="DarkDelight.html"> Home</a></li>
+                        <li><a href="Jquery.html">The shop</a></li>
+                        <li> <a href="#">Desserts</a>
+                             <ul>
+                                <li><a href="#">Cakes</a></li>
+                                <li><a href="#">Cupcakes</a></li> 
+                                <li><a href="#">Cookies</a></li>
+                                <li><a href="#">Pies</a></li>
+                            </ul>
+                            </li>
+                       
+                        <li> <a href="#">Contact</a></li>
+                        <li> <a href="#">Order online</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+                </nav>
+             </div>
+</header>
+    <div>
+        /* div elementet ne vazhdim jane te numeruar sipas renditjes ne faqe me elementet e tyre brenda*/
+        <div id="Div1" class="MainDiv" style=" height: 220px;">
+          
+        <h3 id="hh" style="padding-left: 10px ;">About the shop</h3>
+        <p class="mid_txt" >Welcome to The Cake Shop Bakery. The Cake Shop Bakery is a family owned and operated business. 
+        We carefully select our ingredients for their freshness, flavor and natural value. We choose organic, locally grown products when available. Everything we make embodies our commitment to consistency and excellence. The heart of the bakery is a small, dedicated group of hard working bakers. We are grateful to our amazing staff,
+         loyal customers, and the most supportive local community who allow us to do the work we love every day who allow us to do the work we love every day who allow us to do the work we love every day</p>
+        
+         <p class="mid_txt">In this page there are a few animations made to entertain you: <br> 
+            <a href="#Div2" class="l mid_txt">Animacione me Jquery</a> 
+            <br> <a href="#Div3" class="l mid_txt">Manipulime me Jquery</a> 
+            <br> <a href="#Div4" class="l mid_txt">Manipulime me CSS</a> 
+            <br> <a href="#Div4" class="l mid_txt">Video dhe kenge rreth gatimit</a> </p>
+         <hr class="hrs" style="column-span: all;">
+        </div>
+
+
+
+      <div id="Div2" class="MainDiv" style=" height: 140px; " >
+        <img id="Cake1" src="Photos/project1.jpg" alt="engagement cake" width="160px" height="130" >
+        <p id="p1" style="color: #d24260; display: inline; position: absolute; top: 5px; left: 320px; padding: 10px; border: 2px dashed #1b1b1b; border-radius:10px ;">
+            hover over left cake to toogle right cake<br> hover over right cake to see this text animated <br> click this text to make the cake change sides</p>   
+        <p id="p2" style="color: #d24260; display: inline; position: absolute; top: 100px; left: 340px; display: none;">You have to click it</p> 
+        <p id="p3" style="color: #d24260; display: inline; position: absolute; top: 120px; left: 340px; display: none;">double click it</p>  
+         <img id="Cake2" src="Photos/project1.jpg" alt="engagement cake" width="160px" height="130" align="right" style="display:none; ">
+         <hr class="hrs">
+           
+       </div >
+
+       <div id="Div3" class="MainDiv" style="height: 160px; ">
+        <a id="pic1" href="darkdelight.html">
+            <figure style="display: inline; max-width: 160px;padding: 0;margin: 0;"> <img src="Photos/project2.jpg" alt="photo link per tu kthyer ne faqen kryesore" width="160px" height="130"/>
+         <figcaption id="p4" style="width: 160px; background-color: #222;color: #fff;font: italic smaller sans-serif;"> <mark id="m1" >Chocolate</mark> cake</figcaption></figure> 
+         </a>
+        
+        <div style="display: inline-block; width: 100px; float: right; position: absolute; top: 10px;right:100px;">
+        <button id="btn1">shfaq linkun e fotos</button>
+        <button id="btn2">vendos vleren e re ne paragraf</button>
+        <button id="btn3">vendos vleren origjinale</button>
+        <button id="btn4">shto * ne fillim</button>
+        
+    </div>
+    <div style="display: inline-block; width: 100px; float: right; position: absolute; top: 10px;right:200px;">
+    
+        <button id="btn5">shto * ne fund</button>
+        <button id="btn6">Largon pjesen e theksuar</button>
+        
+    </div>
+    <hr class="hrs">
+    </div>
+    <div id="Div4" class="MainDiv grid-container" style="height: 250px; ">
+        <div class=" grid-item" >
+        <div class="s1" id="t1" ><img src="Photos/cupcakes.jpg" alt="cupcake" width="100%" height="60px" align="left"><p class="mid_txt" style=" padding: 0%;">  funskioni translate </p></div>
+    </div>
+    <div class=" grid-item">
+        <div class="s1" id="t2"><img src="Photos/project1.jpg" alt="cake" width="100%" height="60px" align="left"><p class="mid_txt" style="padding: 0%;">  funskioni rotate</p></div>
+    </div>
+    <div class=" grid-item">
+        <div class="s1" id="t3"><img src="Photos/project2.jpg" alt="cake" width="100%" height="60px" align="left"><p class="mid_txt" style="padding: 0%;"> funskioni scale</p></div>
+    </div>
+        <div class=" grid-item">
+        <div class="s1" id="t4"><img src="Photos/project3.jpg" alt="cake" width="100%" height="60px" align="left"><p class="mid_txt" style="padding: 0%;"> funskioni skew</p></div>
+    </div>
+    <div class=" grid-item">
+        <div class="s1" id="t5"><img src="Photos/cookies.jpg" alt="cake" width="100%" height="60px" align="left"><p class="mid_txt" style="padding: 0%;">funskioni RotateX</p></div>
+    </div>
+        <div class=" grid-item">
+        <div class="s1" id="t6"><img src="Photos/pound cakes.jpg" alt="cake" width="100%" height="60px" align="left"><p class="mid_txt" style="padding: 0%;">funskioni rotateY</p></div>
+    </div>
+    <hr class="hrs"><hr class="hrs">
+    </div>
+    <div id="Div5" class="MainDiv" style="height: 200px; ">
+        <svg class="sv" width="200" height="180">
+            <polygon id="po"points="100,10 40,198 190,78 10,78 160,198"/>
+          </svg>
+
+          <svg class="sv" width="200" height="180">
+            <rect id="rec" x="50" y="20" rx="20" ry="20" width="150" height="150"/>
+          </svg>
+         
+        
+        <p id="pp1" class="mid_txt" style="display: inline-block;">Ne anen e majte jane paraqitur dy elemnte svg dhe animacione
+
+        </p>
+    
+        <hr class="hrs">
+    
+    </div>
+    <div id="Div6" class="MainDiv grid-container" style="height: 500px; ">
+    <div ><video width="400" controls>
+        <source src="Photos/vid1.mp4" type="video/mp4">
+        
+    
+      </video><p class="mid_txt">Some of our tips and tricks</p></div>
+    <div><video width="400" controls>
+        <source src="Photos/vid2.mp4" type="video/mp4">
+        
+    
+      </video><p class="mid_txt">Recap of our baking challenge</p></div>
+      <div>
+      <audio controls>
+        <source src="Photos/b2.mp3" type="audio/mpeg">
+      
+      
+      </audio>
+      <p class="mid_txt">baking song for your kids</p>
+    </div>
+    <div>
+      <audio controls>
+        <source src="Photos/b1.mp3" type="audio/mpeg">
+       
+      </audio>
+      <p class="mid_txt">Another baking song</p>
+      </div>
+    
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"style="border-style:dashed">
+        <img src="Photos/cookies.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+        <p class="mid_txt">drag and drop the image betwen the doted squares</p>
+      </div>
+      
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"style="border-style:dashed" >
+</div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div id="footer">
+                <div class="firstpart">
+                    <h5>CONTACT DETAILS</h5>
+                    <p>Contact us by:
+                        <br><abbr title="Telephone" style="text-decoration: none;">Tel</abbr>: +111 1111111
+                        <br> Fax: +111 1111111
+                        <br><a id="mail" href="mailto:darkdelight@hotmail.com">Email:darkdelight@hotmail.com</a>
+                    </p>
+                    
+                </div>
+                
+                <div class="secondpart">
+                    <h5>QUICK LINKS</h5>
+                    <ul>
+                        <li><a href="DarkDelight.html">Home Page</a></li>
+                        <li><a href="#">Our order online link</a></li>
+                        <li><a href="#">Buy a cake</a></li>
+                        <li><a href="#">Buy a cupcake</a></li>
+                    </ul>
+                </div>
+                <div class="secondpart">
+                    <h5>FROM THE BLOG </h5>
+                    <p><b>Chocolate Peanut Butter Cheesecake.</b><br/>
+                        <small> Posted by <i> Dafin&#235;</i></small>
+                    </p>
+
+                </div>
+        </div>
+        
+   </footer>  
+</body>
+
+
+
+</html>
