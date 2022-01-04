@@ -122,3 +122,22 @@ body {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+.new-icon{
+    border-color: #b94058;
+    background-color: #b94058;
+    color: #ffffff;
+    position:fixed;
+    right: 0;
+    top: 57%;
+    -webkit-transform: translateY(-50%);
+    z-index: 2147483645;
+    border-radius: 3px 0 0 3px;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline block;
+    min-width: 46px;
+    margin-right: 0;
+    cursor: pointer;
+    height: 30px;
+    background: url(./cart.png) no-repeat;
+}
