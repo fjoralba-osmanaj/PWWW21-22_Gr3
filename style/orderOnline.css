@@ -16,3 +16,109 @@ body {
     transform: translate(-50%, -50%);
     font-size: 35px;
   }
+  h3{
+      margin-left: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 20px;
+  }
+  .secondnav
+  {
+      border-bottom: 1px #ffffff;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      height: auto;
+      width: 300px;
+     /* background-image: -webkit-linear-gradient(#ffffff,#720e0e);*/
+      text-decoration: none;
+      font-size: 18px;
+  } 
+  .secondnav a:hover{
+      color: #080808;
+      background-color: #ffffff;
+  }
+  #moo-menu-nav{
+      padding: 0;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 100%;
+      outline-style: initial;
+      outline-color: initial;
+      background-image: initial;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-color: transparent;
+  }
+  .choose-category{
+      font-size: 24px;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(255, 255, 255);
+      padding-bottom: 10px;
+      text-align: left;
+  }
+  .listeditems{
+      list-style-type: none;
+      text-align: left;
+      background-color:#b94058;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+
+  }
+  .listeditems li{
+      border-bottom: 0.5 solid rgba(255, 255, 255, 0.5);
+      padding-left: 15px;
+      list-style: none;
+      box-sizing: border-box;
+      vertical-align: baseline;
+      display: list-item;
+      line-height: 26px;
+      color: #ffffff;
+      word-wrap: break-word;
+      font-weight: 500;
+      font-size: 16px;
+  }
+.onlinestore{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+#ordercupcakes h5{
+    font-size: medium;
+    color: #b94058;
+    text-transform: uppercase;
+    margin-left:20px ;
+    font-weight: bold;
+}
+#ordercupcakes img{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+#ordercookies h5{
+    font-size: medium;
+    color: #b94058;
+    text-transform: uppercase;
+    margin-left:20px ;
+    font-weight: bold;
+
+}
+#ordercookies img{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+#orderbrownies h5{
+    font-size: medium;
+    color: #b94058;
+    text-transform: uppercase;
+    margin-left:20px ;
+    font-weight: bold;
+
+}
+#orderbrownies img{
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
